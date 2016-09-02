@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Sep 02 16:38:01 2016
+# Process ID: 6948
+# Current directory: C:/Users/colucci/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7464
+# Log file: C:/Users/colucci/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/colucci/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/colucci/AppData/Roaming/Xilinx/Vivado/briscola/briscola.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+close_project
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/colucci/AppData/Roaming/Xilinx/Vivado/briscola/briscola.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 02 16:38:36 2016...
+open_project C:/Users/colucci/Desktop/briscola_project/briscola/briscola.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 962.430 ; gain = 138.145
+archive_project C:/Users/colucci/Desktop/briscola_project/briscola.xpr.zip -temp_dir C:/Users/colucci/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-6948-peppalien -force -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/colucci/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-6948-peppalien' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/colucci/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-6948-peppalien/PrjAr/_X_'.
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'blk_mem_gen_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'clk_wiz_2_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-133] re-setting run 'blk_mem_gen_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'clk_wiz_2_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'blk_mem_gen_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'blk_mem_gen_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'clk_wiz_2'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'clk_wiz_2'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

@@ -1,0 +1,1113 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Aug 10 19:04:05 2016
+# Process ID: 5172
+# Current directory: C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.runs/synth_1
+# Command line: vivado.exe -log Briscola.vds -mode batch -messageDb vivado.pb -notrace -source Briscola.tcl
+# Log file: C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.runs/synth_1/Briscola.vds
+# Journal file: C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Briscola.tcl -notrace
+Command: synth_design -top Briscola -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.runs/synth_1/.Xil/Vivado-5172-peppalien/blk_mem_gen_0/blk_mem_gen_0.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.runs/synth_1/.Xil/Vivado-5172-peppalien/clk_wiz_2/clk_wiz_2.dcp]
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1932 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 278.402 ; gain = 69.379
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Briscola' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Briscola.vhd:24]
+	Parameter debounce_cycles bound to: 10000000 - type: integer 
+INFO: [Synth 8-3491] module 'clk_wiz_2' declared at 'C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.runs/synth_1/.Xil/Vivado-5172-peppalien/realtime/clk_wiz_2_stub.vhdl:5' bound to instance 'clock_comp' of component 'clk_wiz_2' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Briscola.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_2' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.runs/synth_1/.Xil/Vivado-5172-peppalien/realtime/clk_wiz_2_stub.vhdl:13]
+	Parameter max_turns bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'Server' declared at 'C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Server.vhd:8' bound to instance 'server_comp' of component 'Server' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Briscola.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'Server' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Server.vhd:30]
+	Parameter max_turns bound to: 20 - type: integer 
+	Parameter width bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'PRNG' declared at 'C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/PRNG.vhd:5' bound to instance 'random_comp' of component 'PRNG' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Server.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'PRNG' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/PRNG.vhd:13]
+	Parameter width bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PRNG' (1#1) [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/PRNG.vhd:13]
+INFO: [Synth 8-4471] merging register 'ai_played_card_reg[value][3:0]' into 'my_ai_card_reg[value][3:0]' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Server.vhd:218]
+INFO: [Synth 8-4471] merging register 'ai_played_card_reg[suit][1:0]' into 'my_ai_card_reg[suit][1:0]' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Server.vhd:218]
+INFO: [Synth 8-4471] merging register 'ai_played_card_reg[points][3:0]' into 'my_ai_card_reg[points][3:0]' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Server.vhd:218]
+INFO: [Synth 8-4471] merging register 'player_played_card_reg[value][3:0]' into 'my_player_card_reg[value][3:0]' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Server.vhd:219]
+INFO: [Synth 8-4471] merging register 'player_played_card_reg[suit][1:0]' into 'my_player_card_reg[suit][1:0]' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Server.vhd:219]
+INFO: [Synth 8-4471] merging register 'player_played_card_reg[points][3:0]' into 'my_player_card_reg[points][3:0]' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Server.vhd:219]
+INFO: [Synth 8-256] done synthesizing module 'Server' (2#1) [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Server.vhd:30]
+	Parameter debounce_cycles bound to: 10000000 - type: integer 
+INFO: [Synth 8-3491] module 'Player' declared at 'C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Player.vhd:8' bound to instance 'player_comp' of component 'Player' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Briscola.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'Player' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Player.vhd:25]
+	Parameter debounce_cycles bound to: 10000000 - type: integer 
+INFO: [Synth 8-4471] merging register 'card1_reg[value][3:0]' into 'int_card1_reg[value][3:0]' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Player.vhd:149]
+INFO: [Synth 8-4471] merging register 'card1_reg[suit][1:0]' into 'int_card1_reg[suit][1:0]' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Player.vhd:149]
+INFO: [Synth 8-4471] merging register 'card1_reg[points][3:0]' into 'int_card1_reg[points][3:0]' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Player.vhd:149]
+INFO: [Synth 8-4471] merging register 'card2_reg[value][3:0]' into 'int_card2_reg[value][3:0]' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Player.vhd:150]
+INFO: [Synth 8-4471] merging register 'card2_reg[suit][1:0]' into 'int_card2_reg[suit][1:0]' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Player.vhd:150]
+INFO: [Synth 8-4471] merging register 'card2_reg[points][3:0]' into 'int_card2_reg[points][3:0]' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Player.vhd:150]
+INFO: [Synth 8-4471] merging register 'card3_reg[value][3:0]' into 'int_card3_reg[value][3:0]' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Player.vhd:151]
+INFO: [Synth 8-4471] merging register 'card3_reg[suit][1:0]' into 'int_card3_reg[suit][1:0]' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Player.vhd:151]
+INFO: [Synth 8-4471] merging register 'card3_reg[points][3:0]' into 'int_card3_reg[points][3:0]' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Player.vhd:151]
+INFO: [Synth 8-256] done synthesizing module 'Player' (3#1) [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Player.vhd:25]
+INFO: [Synth 8-3491] module 'AI_block' declared at 'C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/AI/AI_block.vhd:7' bound to instance 'ai_comp' of component 'AI_block' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Briscola.vhd:182]
+INFO: [Synth 8-638] synthesizing module 'AI_block' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/AI/AI_block.vhd:19]
+INFO: [Synth 8-3491] module 'Manager' declared at 'C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/AI/Manager.vhd:7' bound to instance 'CARD_MANAGER' of component 'Manager' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/AI/AI_block.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'Manager' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/AI/Manager.vhd:16]
+INFO: [Synth 8-3491] module 'Loader' declared at 'C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/AI/Loader.vhd:7' bound to instance 'CARD_LOADER' of component 'Loader' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/AI/Manager.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'Loader' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/AI/Loader.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'Loader' (4#1) [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/AI/Loader.vhd:17]
+INFO: [Synth 8-3491] module 'CARD_MEMORY' declared at 'C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/AI/Card_Memory.vhd:7' bound to instance 'CARD1' of component 'Card_Memory' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/AI/Manager.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'CARD_MEMORY' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/AI/Card_Memory.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'CARD_MEMORY' (5#1) [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/AI/Card_Memory.vhd:15]
+INFO: [Synth 8-3491] module 'CARD_MEMORY' declared at 'C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/AI/Card_Memory.vhd:7' bound to instance 'CARD2' of component 'Card_Memory' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/AI/Manager.vhd:42]
+INFO: [Synth 8-3491] module 'CARD_MEMORY' declared at 'C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/AI/Card_Memory.vhd:7' bound to instance 'CARD3' of component 'Card_Memory' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/AI/Manager.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Manager' (6#1) [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/AI/Manager.vhd:16]
+INFO: [Synth 8-3491] module 'chooser' declared at 'C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/AI/Card_Chooser.vhd:8' bound to instance 'CARD_CHOOSER' of component 'Chooser' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/AI/AI_block.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'chooser' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/AI/Card_Chooser.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'chooser' (7#1) [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/AI/Card_Chooser.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'AI_block' (8#1) [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/AI/AI_block.vhd:19]
+INFO: [Synth 8-3491] module 'vga_top' declared at 'C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/sources_1/imports/new/vga_top.vhd:8' bound to instance 'vga' of component 'vga_top' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Briscola.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'vga_top' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/sources_1/imports/new/vga_top.vhd:30]
+INFO: [Synth 8-3491] module 'vgasync' declared at 'C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/sources_1/new/vga_640x480.vhd:4' bound to instance 'U2' of component 'vgasync' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/sources_1/imports/new/vga_top.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'vgasync' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/sources_1/new/vga_640x480.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'vgasync' (9#1) [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/sources_1/new/vga_640x480.vhd:15]
+INFO: [Synth 8-3491] module 'vga_drawer' declared at 'C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/sources_1/new/vga_drawer.vhd:11' bound to instance 'U3' of component 'vga_drawer' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/sources_1/imports/new/vga_top.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'vga_drawer' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/sources_1/new/vga_drawer.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'vga_drawer' (10#1) [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/sources_1/new/vga_drawer.vhd:37]
+INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.runs/synth_1/.Xil/Vivado-5172-peppalien/realtime/blk_mem_gen_0_stub.vhdl:5' bound to instance 'U4' of component 'blk_mem_gen_0' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/sources_1/imports/new/vga_top.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.runs/synth_1/.Xil/Vivado-5172-peppalien/realtime/blk_mem_gen_0_stub.vhdl:15]
+INFO: [Synth 8-256] done synthesizing module 'vga_top' (11#1) [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/sources_1/imports/new/vga_top.vhd:30]
+INFO: [Synth 8-3491] module 'sound' declared at 'C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/Desktop/sound.vhd:8' bound to instance 'snd' of component 'sound' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Briscola.vhd:213]
+INFO: [Synth 8-638] synthesizing module 'sound' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/Desktop/sound.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'sound' (12#1) [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/Desktop/sound.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'Briscola' (13#1) [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Briscola.vhd:24]
+WARNING: [Synth 8-3331] design vga_drawer has unconnected port vc[9]
+WARNING: [Synth 8-3331] design vga_drawer has unconnected port player_card1[points][3]
+WARNING: [Synth 8-3331] design vga_drawer has unconnected port player_card1[points][2]
+WARNING: [Synth 8-3331] design vga_drawer has unconnected port player_card1[points][1]
+WARNING: [Synth 8-3331] design vga_drawer has unconnected port player_card1[points][0]
+WARNING: [Synth 8-3331] design vga_drawer has unconnected port player_card2[points][3]
+WARNING: [Synth 8-3331] design vga_drawer has unconnected port player_card2[points][2]
+WARNING: [Synth 8-3331] design vga_drawer has unconnected port player_card2[points][1]
+WARNING: [Synth 8-3331] design vga_drawer has unconnected port player_card2[points][0]
+WARNING: [Synth 8-3331] design vga_drawer has unconnected port player_card3[points][3]
+WARNING: [Synth 8-3331] design vga_drawer has unconnected port player_card3[points][2]
+WARNING: [Synth 8-3331] design vga_drawer has unconnected port player_card3[points][1]
+WARNING: [Synth 8-3331] design vga_drawer has unconnected port player_card3[points][0]
+WARNING: [Synth 8-3331] design vga_drawer has unconnected port player_played_card[points][3]
+WARNING: [Synth 8-3331] design vga_drawer has unconnected port player_played_card[points][2]
+WARNING: [Synth 8-3331] design vga_drawer has unconnected port player_played_card[points][1]
+WARNING: [Synth 8-3331] design vga_drawer has unconnected port player_played_card[points][0]
+WARNING: [Synth 8-3331] design vga_drawer has unconnected port ai_played_card[points][3]
+WARNING: [Synth 8-3331] design vga_drawer has unconnected port ai_played_card[points][2]
+WARNING: [Synth 8-3331] design vga_drawer has unconnected port ai_played_card[points][1]
+WARNING: [Synth 8-3331] design vga_drawer has unconnected port ai_played_card[points][0]
+WARNING: [Synth 8-3331] design vga_drawer has unconnected port briscola[points][3]
+WARNING: [Synth 8-3331] design vga_drawer has unconnected port briscola[points][2]
+WARNING: [Synth 8-3331] design vga_drawer has unconnected port briscola[points][1]
+WARNING: [Synth 8-3331] design vga_drawer has unconnected port briscola[points][0]
+WARNING: [Synth 8-3331] design chooser has unconnected port BRISCOLA[value][3]
+WARNING: [Synth 8-3331] design chooser has unconnected port BRISCOLA[value][2]
+WARNING: [Synth 8-3331] design chooser has unconnected port BRISCOLA[value][1]
+WARNING: [Synth 8-3331] design chooser has unconnected port BRISCOLA[value][0]
+WARNING: [Synth 8-3331] design chooser has unconnected port BRISCOLA[points][3]
+WARNING: [Synth 8-3331] design chooser has unconnected port BRISCOLA[points][2]
+WARNING: [Synth 8-3331] design chooser has unconnected port BRISCOLA[points][1]
+WARNING: [Synth 8-3331] design chooser has unconnected port BRISCOLA[points][0]
+WARNING: [Synth 8-3331] design Loader has unconnected port HAND_IN[0][points][3]
+WARNING: [Synth 8-3331] design Loader has unconnected port HAND_IN[0][points][2]
+WARNING: [Synth 8-3331] design Loader has unconnected port HAND_IN[0][points][1]
+WARNING: [Synth 8-3331] design Loader has unconnected port HAND_IN[0][points][0]
+WARNING: [Synth 8-3331] design Loader has unconnected port HAND_IN[1][points][3]
+WARNING: [Synth 8-3331] design Loader has unconnected port HAND_IN[1][points][2]
+WARNING: [Synth 8-3331] design Loader has unconnected port HAND_IN[1][points][1]
+WARNING: [Synth 8-3331] design Loader has unconnected port HAND_IN[1][points][0]
+WARNING: [Synth 8-3331] design Loader has unconnected port HAND_IN[2][points][3]
+WARNING: [Synth 8-3331] design Loader has unconnected port HAND_IN[2][points][2]
+WARNING: [Synth 8-3331] design Loader has unconnected port HAND_IN[2][points][1]
+WARNING: [Synth 8-3331] design Loader has unconnected port HAND_IN[2][points][0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 353.777 ; gain = 144.754
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 353.777 ; gain = 144.754
+---------------------------------------------------------------------------------
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.runs/synth_1/.Xil/Vivado-5172-peppalien/blk_mem_gen_0/blk_mem_gen_0.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.runs/synth_1/.Xil/Vivado-5172-peppalien/clk_wiz_2/clk_wiz_2.dcp]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_0' instantiated as 'vga/U4' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/sources_1/imports/new/vga_top.vhd:92]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_2' instantiated as 'clock_comp' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Briscola.vhd:148]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.runs/synth_1/.Xil/Vivado-5172-peppalien/dcp/blk_mem_gen_0_in_context.xdc] for cell 'vga/U4'
+Finished Parsing XDC File [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.runs/synth_1/.Xil/Vivado-5172-peppalien/dcp/blk_mem_gen_0_in_context.xdc] for cell 'vga/U4'
+Parsing XDC File [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.runs/synth_1/.Xil/Vivado-5172-peppalien/dcp_2/clk_wiz_2_in_context.xdc] for cell 'clock_comp'
+Finished Parsing XDC File [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.runs/synth_1/.Xil/Vivado-5172-peppalien/dcp_2/clk_wiz_2_in_context.xdc] for cell 'clock_comp'
+Parsing XDC File [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/constrs_1/imports/constraints_xdc_vivado/Nexys4_Master.xdc]
+Finished Parsing XDC File [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/constrs_1/imports/constraints_xdc_vivado/Nexys4_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/constrs_1/imports/constraints_xdc_vivado/Nexys4_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Briscola_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Briscola_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 664.910 ; gain = 0.000
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.runs/synth_1/.Xil/Vivado-5172-peppalien/blk_mem_gen_0/blk_mem_gen_0.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.runs/synth_1/.Xil/Vivado-5172-peppalien/clk_wiz_2/clk_wiz_2.dcp]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 664.910 ; gain = 455.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 664.910 ; gain = 455.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clock. (constraint file  {C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.runs/synth_1/.Xil/Vivado-5172-peppalien/dcp_2/clk_wiz_2_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clock. (constraint file  {C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.runs/synth_1/.Xil/Vivado-5172-peppalien/dcp_2/clk_wiz_2_in_context.xdc}, line 4).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 664.910 ; gain = 455.887
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Server.vhd:158]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Server.vhd:158]
+INFO: [Synth 8-802] inferred FSM for state register 'phase_reg' in module 'Server'
+INFO: [Synth 8-5544] ROM "phase" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "first_to_play" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "shuffle_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[32]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[32]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[33]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[33]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[34]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[34]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[35]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[35]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[36]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[36]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[37]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[37]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[38]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[38]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[39]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[39]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "result" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "turn" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "turn" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "card_pos" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "music_index" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "music_index" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ai_points_vga" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ai_points_vga" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "first_to_play" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "player_points" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ai_points" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "player_new_card[value]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "player_new_card[value]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "phase" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "phase" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "phase" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "first_to_play" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "shuffle_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shuffle_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5544] ROM "phase" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ai_points_vga" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "music_index" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "int_card1[value]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "int_card2[value]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "int_card3[value]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "result" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SELECTOR" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "HAND_UPDATE_reg[0][value]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "HAND_UPDATE_reg[1][value]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "HAND_UPDATE_reg[2][value]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "foundhole" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "HAND_UPDATE_reg[0][value]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "HAND_UPDATE_reg[1][value]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "HAND_UPDATE_reg[2][value]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "foundhole" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:393]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/sources_1/new/vga_drawer.vhd:267]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:393]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:393]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:393]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:339]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:393]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:339]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:393]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:339]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:393]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:393]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:393]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:393]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:393]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:393]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:393]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/sources_1/new/vga_drawer.vhd:238]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/sources_1/new/vga_drawer.vhd:238]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:393]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:339]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:393]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:339]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:393]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:339]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:393]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:393]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/sources_1/new/vga_drawer.vhd:225]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:393]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:393]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:393]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:393]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:393]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/new/data.vhd:393]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/sources_1/new/vga_drawer.vhd:206]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/sources_1/new/vga_drawer.vhd:203]
+INFO: [Synth 8-5587] ROM size for "temp_addr" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "temp_addr" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "temp_addr" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "temp_addr" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "temp_addr" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "temp_addr" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "temp_addr" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "temp_addr" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "temp_addr" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "temp_addr" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "temp_addr" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "temp_addr" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "green" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "temp_addr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "temp_addr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "temp_addr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "temp_addr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "temp_addr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "temp_addr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'speakertemp_reg' into 'speaker_reg' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/Desktop/sound.vhd:47]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 | 00000000000000000000000000000000
+                 iSTATE1 |                             0010 | 00000000000000000000000000000001
+*
+                 iSTATE0 |                             0100 | 00000000000000000000000000000010
+                 iSTATE2 |                             1000 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'phase_reg' using encoding 'one-hot' in module 'Server'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 664.910 ; gain = 455.887
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |vga_top       |           1|     30842|
+|2     |Server        |           1|     14674|
+|3     |Briscola__GB2 |           1|     11996|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 23    
+	   3 Input     32 Bit       Adders := 23    
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 8     
+	   3 Input     31 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 10    
+	   2 Input     10 Bit       Adders := 18    
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 10    
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               31 Bit    Registers := 5     
+	               18 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 40    
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 115   
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 60    
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 52    
+	   4 Input     32 Bit        Muxes := 7     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 21    
+	   4 Input     31 Bit        Muxes := 6     
+	   4 Input     28 Bit        Muxes := 1     
+	   4 Input     25 Bit        Muxes := 1     
+	   4 Input     24 Bit        Muxes := 4     
+	   2 Input     20 Bit        Muxes := 2     
+	   4 Input     20 Bit        Muxes := 5     
+	   2 Input     19 Bit        Muxes := 12    
+	  11 Input     19 Bit        Muxes := 10    
+	   2 Input     18 Bit        Muxes := 13    
+	   3 Input     18 Bit        Muxes := 1     
+	   4 Input     18 Bit        Muxes := 4     
+	  11 Input     17 Bit        Muxes := 12    
+	   4 Input     17 Bit        Muxes := 16    
+	   2 Input     16 Bit        Muxes := 10    
+	   4 Input     16 Bit        Muxes := 13    
+	   4 Input     15 Bit        Muxes := 2     
+	   4 Input     13 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 10    
+	   4 Input     11 Bit        Muxes := 10    
+	   2 Input     10 Bit        Muxes := 16    
+	   4 Input     10 Bit        Muxes := 8     
+	   4 Input      9 Bit        Muxes := 7     
+	   4 Input      7 Bit        Muxes := 41    
+	   2 Input      7 Bit        Muxes := 40    
+	   2 Input      6 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 27    
+	  25 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 123   
+	   4 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 6     
+	   2 Input      3 Bit        Muxes := 3     
+	   4 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 68    
+	   4 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 173   
+	  40 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PRNG 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                6 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 2     
+Module Server 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 2     
+	   3 Input     31 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               31 Bit    Registers := 5     
+	                7 Bit    Registers := 40    
+	                4 Bit    Registers := 89    
+	                2 Bit    Registers := 47    
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 15    
+	   4 Input      7 Bit        Muxes := 40    
+	   2 Input      7 Bit        Muxes := 40    
+	   2 Input      4 Bit        Muxes := 118   
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 52    
+	   2 Input      1 Bit        Muxes := 121   
+	  40 Input      1 Bit        Muxes := 1     
+Module vgasync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+Module vga_drawer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 15    
+	   3 Input     32 Bit       Adders := 23    
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 6     
+	   2 Input     11 Bit       Adders := 10    
+	   2 Input     10 Bit       Adders := 16    
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 6     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               18 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 13    
+	   4 Input     32 Bit        Muxes := 6     
+	   2 Input     31 Bit        Muxes := 6     
+	   4 Input     31 Bit        Muxes := 6     
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input     19 Bit        Muxes := 12    
+	  11 Input     19 Bit        Muxes := 10    
+	   2 Input     18 Bit        Muxes := 13    
+	   3 Input     18 Bit        Muxes := 1     
+	  11 Input     17 Bit        Muxes := 12    
+	   2 Input     16 Bit        Muxes := 10    
+	   2 Input     11 Bit        Muxes := 10    
+	   2 Input     10 Bit        Muxes := 14    
+	   2 Input      5 Bit        Muxes := 12    
+	  25 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+Module Player 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 9     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 14    
+	   4 Input      1 Bit        Muxes := 6     
+Module Loader 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module CARD_MEMORY__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+Module CARD_MEMORY__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+Module CARD_MEMORY 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+Module chooser 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 3     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 30    
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 14    
+	   3 Input      4 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 15    
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+Module sound 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     28 Bit        Muxes := 1     
+	   4 Input     25 Bit        Muxes := 1     
+	   4 Input     24 Bit        Muxes := 4     
+	   4 Input     20 Bit        Muxes := 5     
+	   4 Input     18 Bit        Muxes := 4     
+	   4 Input     17 Bit        Muxes := 16    
+	   4 Input     16 Bit        Muxes := 13    
+	   4 Input     15 Bit        Muxes := 2     
+	   4 Input     13 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 2     
+	   4 Input     11 Bit        Muxes := 10    
+	   4 Input     10 Bit        Muxes := 8     
+	   4 Input      9 Bit        Muxes := 7     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 664.910 ; gain = 455.887
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'n_turns_reg[30:0]' into 'turns_reg[30:0]' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/new/Server.vhd:220]
+INFO: [Synth 8-4471] merging register 'coord_reg[y][8:0]' into 'coord_reg[y][8:0]' [C:/Users/colucci/Google Drive/Uni/Second Year - 2015_2016/Second Semester/Computer Architecture/Assignment/2016/Project_personal/briscola/briscola.srcs/sources_1/imports/sources_1/new/vga_drawer.vhd:117]
+DSP Report: Generating DSP appetibility[0]1, operation Mode is: (A:0x3e8)*B.
+DSP Report: operator appetibility[0]1 is absorbed into DSP appetibility[0]1.
+DSP Report: Generating DSP appetibility[0]1, operation Mode is: (A:0x3e8)*B.
+DSP Report: operator appetibility[0]1 is absorbed into DSP appetibility[0]1.
+DSP Report: Generating DSP appetibility[0]0, operation Mode is: A*B.
+DSP Report: operator appetibility[0]0 is absorbed into DSP appetibility[0]0.
+DSP Report: Generating DSP appetibility[0]0, operation Mode is: (A:0x3e8)*B.
+DSP Report: operator appetibility[0]0 is absorbed into DSP appetibility[0]0.
+DSP Report: Generating DSP appetibility[0]1, operation Mode is: A*(B:0x3e8).
+DSP Report: operator appetibility[0]1 is absorbed into DSP appetibility[0]1.
+DSP Report: Generating DSP appetibility[1]1, operation Mode is: (A:0x3e8)*B.
+DSP Report: operator appetibility[1]1 is absorbed into DSP appetibility[1]1.
+DSP Report: Generating DSP appetibility[1]1, operation Mode is: (A:0x3e8)*B.
+DSP Report: operator appetibility[1]1 is absorbed into DSP appetibility[1]1.
+DSP Report: Generating DSP appetibility[1]0, operation Mode is: A*B.
+DSP Report: operator appetibility[1]0 is absorbed into DSP appetibility[1]0.
+DSP Report: Generating DSP appetibility[1]0, operation Mode is: (A:0x3e8)*B.
+DSP Report: operator appetibility[1]0 is absorbed into DSP appetibility[1]0.
+DSP Report: Generating DSP appetibility[1]1, operation Mode is: A*(B:0x3e8).
+DSP Report: operator appetibility[1]1 is absorbed into DSP appetibility[1]1.
+DSP Report: Generating DSP appetibility[2]1, operation Mode is: (A:0x3e8)*B.
+DSP Report: operator appetibility[2]1 is absorbed into DSP appetibility[2]1.
+DSP Report: Generating DSP appetibility[2]1, operation Mode is: (A:0x3e8)*B.
+DSP Report: operator appetibility[2]1 is absorbed into DSP appetibility[2]1.
+DSP Report: Generating DSP appetibility[2]0, operation Mode is: A*B.
+DSP Report: operator appetibility[2]0 is absorbed into DSP appetibility[2]0.
+DSP Report: Generating DSP appetibility[2]0, operation Mode is: (A:0x3e8)*B.
+DSP Report: operator appetibility[2]0 is absorbed into DSP appetibility[2]0.
+DSP Report: Generating DSP appetibility[2]1, operation Mode is: A*(B:0x3e8).
+DSP Report: operator appetibility[2]1 is absorbed into DSP appetibility[2]1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 664.910 ; gain = 455.887
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 664.910 ; gain = 455.887
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |vga_top       |           1|     65731|
+|2     |Server        |           1|     14780|
+|3     |Briscola__GB2 |           1|     11577|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|chooser     | (A:0x3e8)*B | 9      | 10     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|chooser     | (A:0x3e8)*B | 5      | 10     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|chooser     | A*B         | 16     | 5      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|chooser     | (A:0x3e8)*B | 8      | 10     | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|chooser     | A*(B:0x3e8) | 17     | 11     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|chooser     | (A:0x3e8)*B | 9      | 10     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|chooser     | (A:0x3e8)*B | 5      | 10     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|chooser     | A*B         | 16     | 5      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|chooser     | (A:0x3e8)*B | 8      | 10     | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|chooser     | A*(B:0x3e8) | 17     | 11     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|chooser     | (A:0x3e8)*B | 9      | 10     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|chooser     | (A:0x3e8)*B | 5      | 10     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|chooser     | A*B         | 16     | 5      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|chooser     | (A:0x3e8)*B | 8      | 10     | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|chooser     | A*(B:0x3e8) | 17     | 11     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (server_comp/\my_deck_reg[0][value][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (server_comp/\my_deck_reg[0][value][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (server_comp/\my_deck_reg[0][value][3] )
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[2]' (FDSE) to 'server_comp/music_index_reg[3]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[3]' (FDSE) to 'server_comp/music_index_reg[4]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[4]' (FDSE) to 'server_comp/music_index_reg[5]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[5]' (FDSE) to 'server_comp/music_index_reg[6]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[6]' (FDSE) to 'server_comp/music_index_reg[7]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[7]' (FDSE) to 'server_comp/music_index_reg[8]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[8]' (FDSE) to 'server_comp/music_index_reg[9]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[9]' (FDSE) to 'server_comp/music_index_reg[10]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[10]' (FDSE) to 'server_comp/music_index_reg[11]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[11]' (FDSE) to 'server_comp/music_index_reg[12]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[12]' (FDSE) to 'server_comp/music_index_reg[13]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[13]' (FDSE) to 'server_comp/music_index_reg[14]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[14]' (FDSE) to 'server_comp/music_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[15]' (FDSE) to 'server_comp/music_index_reg[16]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[16]' (FDSE) to 'server_comp/music_index_reg[17]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[17]' (FDSE) to 'server_comp/music_index_reg[18]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[18]' (FDSE) to 'server_comp/music_index_reg[19]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[19]' (FDSE) to 'server_comp/music_index_reg[20]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[20]' (FDSE) to 'server_comp/music_index_reg[21]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[21]' (FDSE) to 'server_comp/music_index_reg[22]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[22]' (FDSE) to 'server_comp/music_index_reg[23]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[23]' (FDSE) to 'server_comp/music_index_reg[24]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[24]' (FDSE) to 'server_comp/music_index_reg[25]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[25]' (FDSE) to 'server_comp/music_index_reg[26]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[26]' (FDSE) to 'server_comp/music_index_reg[27]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[27]' (FDSE) to 'server_comp/music_index_reg[28]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[28]' (FDSE) to 'server_comp/music_index_reg[29]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[29]' (FDSE) to 'server_comp/music_index_reg[30]'
+INFO: [Synth 8-3886] merging instance 'server_comp/music_index_reg[30]' (FDSE) to 'server_comp/music_index_reg[31]'
+INFO: [Synth 8-3886] merging instance 'server_comp/player_points_vga_reg[31]' (FDRE) to 'server_comp/ai_points_vga_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (server_comp/\ai_points_vga_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[0][value][3]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[0][value][2]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[0][value][1]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[30]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[29]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[28]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[27]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[26]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[25]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[24]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[23]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[22]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[21]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[20]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[19]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[18]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[17]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[16]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[15]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[14]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[13]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[12]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[11]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[10]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[9]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[8]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[7]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[6]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[5]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[4]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[3]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (music_index_reg[2]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (ai_points_vga_reg[31]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (player_points_vga_reg[31]) is unused and will be removed from module Server.
+INFO: [Synth 8-3886] merging instance 'vga/U3/temp_addr_reg[0]' (FD) to 'vga/U3/rom_address18_reg[0]'
+INFO: [Synth 8-3886] merging instance 'vga/U3/temp_addr_reg[1]' (FD) to 'vga/U3/rom_address18_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga/U3/temp_addr_reg[2]' (FD) to 'vga/U3/rom_address18_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/U3/temp_addr_reg[3]' (FD) to 'vga/U3/rom_address18_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga/U3/temp_addr_reg[4]' (FD) to 'vga/U3/rom_address18_reg[4]'
+INFO: [Synth 8-3886] merging instance 'vga/U3/temp_addr_reg[5]' (FD) to 'vga/U3/rom_address18_reg[5]'
+INFO: [Synth 8-3886] merging instance 'vga/U3/temp_addr_reg[6]' (FD) to 'vga/U3/rom_address18_reg[6]'
+INFO: [Synth 8-3886] merging instance 'vga/U3/temp_addr_reg[7]' (FD) to 'vga/U3/rom_address18_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/U3/temp_addr_reg[8]' (FD) to 'vga/U3/rom_address18_reg[8]'
+INFO: [Synth 8-3886] merging instance 'vga/U3/temp_addr_reg[9]' (FD) to 'vga/U3/rom_address18_reg[9]'
+INFO: [Synth 8-3886] merging instance 'vga/U3/temp_addr_reg[10]' (FD) to 'vga/U3/rom_address18_reg[10]'
+INFO: [Synth 8-3886] merging instance 'vga/U3/temp_addr_reg[11]' (FD) to 'vga/U3/rom_address18_reg[11]'
+INFO: [Synth 8-3886] merging instance 'vga/U3/temp_addr_reg[12]' (FD) to 'vga/U3/rom_address18_reg[12]'
+INFO: [Synth 8-3886] merging instance 'vga/U3/temp_addr_reg[13]' (FD) to 'vga/U3/rom_address18_reg[13]'
+INFO: [Synth 8-3886] merging instance 'vga/U3/temp_addr_reg[14]' (FD) to 'vga/U3/rom_address18_reg[14]'
+INFO: [Synth 8-3886] merging instance 'vga/U3/temp_addr_reg[15]' (FD) to 'vga/U3/rom_address18_reg[15]'
+INFO: [Synth 8-3886] merging instance 'vga/U3/temp_addr_reg[16]' (FD) to 'vga/U3/rom_address18_reg[16]'
+INFO: [Synth 8-3886] merging instance 'vga/U3/temp_addr_reg[17]' (FD) to 'vga/U3/rom_address18_reg[17]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga/U3/\n_cards_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (n_cards_reg[0]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[31]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[30]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[29]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[28]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[27]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[26]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[25]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[24]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[23]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[22]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[21]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[20]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[19]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[18]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[0]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[1]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[2]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[3]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[4]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[5]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[6]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[7]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[8]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[9]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[10]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[11]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[12]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[13]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[14]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[15]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[16]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[17]) is unused and will be removed from module vga_drawer.
+WARNING: [Synth 8-3332] Sequential element (briscola_reg[points][3]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (briscola_reg[points][2]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (briscola_reg[points][1]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (briscola_reg[points][0]) is unused and will be removed from module Server.
+INFO: [Synth 8-3886] merging instance 'i_0/player_comp/i_10/counter_reg[28]' (FDRE) to 'i_0/player_comp/i_10/counter_reg[29]'
+INFO: [Synth 8-3886] merging instance 'i_0/player_comp/i_10/counter_reg[29]' (FDRE) to 'i_0/player_comp/i_10/counter_reg[30]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/player_comp/i_10/\counter_reg[30] )
+WARNING: [Synth 8-3332] Sequential element (counter_reg[28]) is unused and will be removed from module Player.
+WARNING: [Synth 8-3332] Sequential element (counter_reg[29]) is unused and will be removed from module Player.
+WARNING: [Synth 8-3332] Sequential element (counter_reg[30]) is unused and will be removed from module Player.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 708.242 ; gain = 499.219
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 708.242 ; gain = 499.219
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |vga_top       |           1|     23177|
+|2     |Server        |           1|      5544|
+|3     |Briscola__GB2 |           1|      4319|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clock_comp/clk_out1' to pin 'clock_comp/bbstub_clk_out1/O'
+INFO: [Synth 8-5820] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:24 ; elapsed = 00:01:29 . Memory (MB): peak = 778.117 ; gain = 569.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:32 ; elapsed = 00:01:37 . Memory (MB): peak = 928.328 ; gain = 719.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |vga_top       |           1|     21135|
+|2     |Server        |           1|      5544|
+|3     |Briscola__GB2 |           1|      4319|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[0][suit][1]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[0][suit][0]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[1][suit][1]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[1][suit][0]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[2][suit][1]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[2][suit][0]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[3][suit][1]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[3][suit][0]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[4][suit][1]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[4][suit][0]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[5][suit][1]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[5][suit][0]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[6][suit][1]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[6][suit][0]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[7][suit][1]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[7][suit][0]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[8][suit][1]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[8][suit][0]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[9][suit][1]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[9][suit][0]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[10][suit][1]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[11][suit][1]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[12][suit][1]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[13][suit][1]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[14][suit][1]) is unused and will be removed from module Server.
+WARNING: [Synth 8-3332] Sequential element (my_deck_reg[15][suit][1]) is unused and will be removed from module Server.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[2]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[3]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[4]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[5]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[6]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[7]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[8]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[9]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[10]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[11]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[12]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[13]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[14]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[15]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[16]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[17]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[18]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[19]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[20]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[21]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[22]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[23]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[24]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[25]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[26]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[27]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[28]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[29]' (FDE) to 'snd/indextemp_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snd/indextemp_reg[31]' (FDE) to 'snd/indextemp_reg[30]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:42 ; elapsed = 00:01:47 . Memory (MB): peak = 929.500 ; gain = 720.477
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:42 ; elapsed = 00:01:47 . Memory (MB): peak = 929.500 ; gain = 720.477
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:42 ; elapsed = 00:01:47 . Memory (MB): peak = 929.500 ; gain = 720.477
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 929.500 ; gain = 720.477
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:43 ; elapsed = 00:01:49 . Memory (MB): peak = 929.500 ; gain = 720.477
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:45 ; elapsed = 00:01:50 . Memory (MB): peak = 929.500 ; gain = 720.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:46 ; elapsed = 00:01:51 . Memory (MB): peak = 929.500 ; gain = 720.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:46 ; elapsed = 00:01:51 . Memory (MB): peak = 929.500 ; gain = 720.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:46 ; elapsed = 00:01:51 . Memory (MB): peak = 929.500 ; gain = 720.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_2     |         1|
+|2     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |blk_mem_gen_0_bbox |     1|
+|2     |clk_wiz_2_bbox     |     1|
+|3     |CARRY4             |  1499|
+|4     |DSP48E1            |    12|
+|5     |DSP48E1_1          |     3|
+|6     |LUT1               |  1479|
+|7     |LUT2               |  1403|
+|8     |LUT3               |  1555|
+|9     |LUT4               |  1096|
+|10    |LUT5               |  1652|
+|11    |LUT6               |  4386|
+|12    |MUXF7              |    86|
+|13    |MUXF8              |    14|
+|14    |FDRE               |   924|
+|15    |FDSE               |   289|
+|16    |IBUF               |     8|
+|17    |OBUF               |    16|
++------+-------------------+------+
+
+Report Instance Areas: 
++------+------------------+--------------+------+
+|      |Instance          |Module        |Cells |
++------+------------------+--------------+------+
+|1     |top               |              | 14435|
+|2     |  ai_comp         |AI_block      |  1200|
+|3     |    CARD_CHOOSER  |chooser       |   597|
+|4     |    CARD_MANAGER  |Manager       |   603|
+|5     |      CARD1       |CARD_MEMORY   |   252|
+|6     |      CARD2       |CARD_MEMORY_0 |   200|
+|7     |      CARD3       |CARD_MEMORY_1 |   118|
+|8     |      CARD_LOADER |Loader        |    33|
+|9     |  player_comp     |Player        |   739|
+|10    |  server_comp     |Server        |  6268|
+|11    |    random_comp   |PRNG          |   333|
+|12    |  snd             |sound         |   510|
+|13    |  vga             |vga_top       |  3110|
+|14    |    U2            |vgasync       |   267|
+|15    |    U3            |vga_drawer    |  2831|
++------+------------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:46 ; elapsed = 00:01:51 . Memory (MB): peak = 929.500 ; gain = 720.477
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 356 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:32 ; elapsed = 00:01:40 . Memory (MB): peak = 929.500 ; gain = 408.285
+Synthesis Optimization Complete : Time (s): cpu = 00:01:46 ; elapsed = 00:01:51 . Memory (MB): peak = 929.500 ; gain = 720.477
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1522 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+343 Infos, 153 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:50 ; elapsed = 00:01:52 . Memory (MB): peak = 929.500 ; gain = 720.477
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 929.500 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 10 19:06:04 2016...

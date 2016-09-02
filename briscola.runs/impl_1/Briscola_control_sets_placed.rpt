@@ -1,0 +1,138 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Wed Aug 10 19:07:35 2016
+| Host         : peppalien running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file Briscola_control_sets_placed.rpt
+| Design       : Briscola
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    85 |
+| Unused register locations in slices containing registers |   201 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             252 |          139 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             100 |           53 |
+| Yes          | No                    | No                     |             139 |           60 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             732 |          265 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------------+-------------------------------------------------------------+------------------------------------------------------+------------------+----------------+
+|        Clock Signal       |                        Enable Signal                        |                   Set/Reset Signal                   | Slice Load Count | Bel Load Count |
++---------------------------+-------------------------------------------------------------+------------------------------------------------------+------------------+----------------+
+|  clock_comp/inst/clk_out1 | snd/indextemp[30]_i_1_n_0                                   |                                                      |                1 |              1 |
+|  clock_comp/inst/clk_out1 | ai_comp/CARD_MANAGER/CARD1/HAND_UPDATE_reg[0][value][3][0]  | ai_comp/CARD_CHOOSER/SR[0]                           |                1 |              4 |
+|  clock_comp/inst/clk_out1 | player_comp/card_out[value][3]_i_2_n_0                      | player_comp/card_out[value][3]_i_1_n_0               |                1 |              4 |
+|  clock_comp/inst/clk_out1 | player_comp/int_card2[value]                                | player_comp/reset0                                   |                1 |              4 |
+|  clock_comp/inst/clk_out1 | player_comp/HAND_UPDATE_reg[2][value][3][0]                 | ai_comp/CARD_CHOOSER/HAND_UPDATE_reg[2][value][0][0] |                1 |              4 |
+|  clock_comp/inst/clk_out1 | ai_comp/CARD_MANAGER/CARD1/E[0]                             | ai_comp/CARD_CHOOSER/HAND_UPDATE_reg[1][value][0][0] |                2 |              4 |
+|  clock_comp/inst/clk_out1 | player_comp/int_card3[value]                                | player_comp/reset0                                   |                1 |              4 |
+|  clock_comp/inst/clk_out1 | player_comp/int_card1[value][3]_i_1_n_0                     | player_comp/reset0                                   |                1 |              4 |
+|  clock_comp/inst/clk_out1 | server_comp/FSM_onehot_phase[3]_i_1_n_0                     | player_comp/reset                                    |                3 |              4 |
+|  clock_comp/inst/clk_out1 |                                                             | server_comp/random_comp/sel                          |                2 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[28][0][0]               | player_comp/reset                                    |                4 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[19][0][0]               | player_comp/reset                                    |                1 |              6 |
+|  clock_comp/inst/clk_out1 | ai_comp/CARD_MANAGER/CARD1/HAND_UPDATE_reg[0][suit][0][0]   |                                                      |                3 |              6 |
+|  clock_comp/inst/clk_out1 | player_comp/int_card2[suit][1]_i_1_n_0                      |                                                      |                6 |              6 |
+|  clock_comp/inst/clk_out1 | ai_comp/CARD_MANAGER/CARD1/HAND_UPDATE_reg[1][points][0][0] |                                                      |                2 |              6 |
+|  clock_comp/inst/clk_out1 | ai_comp/CARD_MANAGER/CARD3/E[0]                             |                                                      |                4 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[21][0][0]               | player_comp/reset                                    |                4 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[1][0][0]                | player_comp/reset                                    |                2 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[20][0][0]               | player_comp/reset                                    |                2 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[27][0][0]               | player_comp/reset                                    |                3 |              6 |
+|  clock_comp/inst/clk_out1 | player_comp/card_out[suit][1]_i_1_n_0                       |                                                      |                4 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[26][0][0]               | player_comp/reset                                    |                4 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[25][0][0]               | player_comp/reset                                    |                3 |              6 |
+|  clock_comp/inst/clk_out1 | player_comp/int_card1[suit][1]_i_1_n_0                      |                                                      |                2 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[24][0][0]               | player_comp/reset                                    |                2 |              6 |
+|  clock_comp/inst/clk_out1 | player_comp/int_card3[suit][1]_i_1_n_0                      |                                                      |                2 |              6 |
+|  clock_comp/inst/clk_out1 | player_comp/temp[suit][1]_i_1_n_0                           |                                                      |                4 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[23][0][0]               | player_comp/reset                                    |                2 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[22][0][0]               | player_comp/reset                                    |                5 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[0][0][0]                | player_comp/reset                                    |                3 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[10][0][0]               | player_comp/reset                                    |                3 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[11][0][0]               | player_comp/reset                                    |                2 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[12][0][0]               | player_comp/reset                                    |                3 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[13][0][0]               | player_comp/reset                                    |                3 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[14][0][0]               | player_comp/reset                                    |                2 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[15][0][0]               | player_comp/reset                                    |                4 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[16][0][0]               | player_comp/reset                                    |                2 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[17][0][0]               | player_comp/reset                                    |                3 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[18][0][0]               | player_comp/reset                                    |                2 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[2][0][0]                | player_comp/reset                                    |                3 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[30][0][0]               | player_comp/reset                                    |                4 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[31][0][0]               | player_comp/reset                                    |                3 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[32][0][0]               | player_comp/reset                                    |                4 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[33][0][0]               | player_comp/reset                                    |                5 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[34][0][0]               | player_comp/reset                                    |                3 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[35][0][0]               | player_comp/reset                                    |                3 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[36][0][0]               | player_comp/reset                                    |                2 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[37][0][0]               | player_comp/reset                                    |                2 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[38][0][0]               | player_comp/reset                                    |                2 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[39][0][0]               | player_comp/reset                                    |                2 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[3][0][0]                | player_comp/reset                                    |                3 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[4][0][0]                | player_comp/reset                                    |                3 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[5][0][0]                | player_comp/reset                                    |                3 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[6][0][0]                | player_comp/reset                                    |                3 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[7][0][0]                | player_comp/reset                                    |                2 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[8][0][0]                | player_comp/reset                                    |                3 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[9][0][0]                | player_comp/reset                                    |                3 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/shuffle_reg[29][0][0]               | player_comp/reset                                    |                5 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/briscola[value][3]_i_1_n_0                      | player_comp/reset                                    |                5 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/enable_reg_n_0                                  |                                                      |                3 |              6 |
+|  clock_comp/inst/clk_out1 | server_comp/player_new_card[value][3]_i_2_n_0               | server_comp/player_new_card[value][3]_i_1_n_0        |                3 |              8 |
+|  clock_comp/inst/clk_out1 | ai_comp/CARD_MANAGER/CARD_LOADER/CARD_OUT_reg[points][0][2] |                                                      |                3 |             10 |
+|  clock_comp/inst/clk_out1 | ai_comp/CARD_MANAGER/CARD_LOADER/CARD_OUT_reg[points][0][0] |                                                      |                4 |             10 |
+|  clock_comp/inst/clk_out1 | vga/U2/vsen                                                 |                                                      |                5 |             10 |
+|  clock_comp/inst/clk_out1 |                                                             | vga/U3/red[3]_i_1_n_0                                |                6 |             10 |
+|  clock_comp/inst/clk_out1 | ai_comp/CARD_MANAGER/CARD_LOADER/CARD_OUT_reg[points][0][1] |                                                      |                4 |             10 |
+|  clock_comp/inst/clk_out1 | vga/U3/done                                                 | vga/U3/SR[0]                                         |                8 |             10 |
+|  clock_comp/inst/clk_out1 | server_comp/player_new_card[suit][1]_i_1_n_0                |                                                      |                5 |             12 |
+|  clock_comp/inst/clk_out1 | player_comp/counter[0]_i_1__1_n_0                           | reset_btn_IBUF                                       |                7 |             28 |
+|  clock_comp/inst/clk_out1 | server_comp/turns[30]_i_1_n_0                               | player_comp/reset                                    |                8 |             30 |
+|  clock_comp/inst/clk_out1 | server_comp/ai_points[30]_i_1_n_0                           | player_comp/reset                                    |                8 |             31 |
+|  clock_comp/inst/clk_out1 | player_comp/counter0                                        | player_comp/counter[0]__0_i_1_n_0                    |                8 |             31 |
+|  clock_comp/inst/clk_out1 | ai_comp/CARD_CHOOSER/player_points_reg[0]_2[0]              | player_comp/reset                                    |                8 |             31 |
+|  clock_comp/inst/clk_out1 | server_comp/card_pos[30]_i_2_n_0                            | server_comp/card_pos[30]_i_1_n_0                     |               11 |             31 |
+|  clock_comp/inst/clk_out1 |                                                             | server_comp/n_cards_reg[31][30]                      |                8 |             31 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/sel                                 |                                                      |                8 |             32 |
+|  clock_comp/inst/clk_out1 | server_comp/random_comp/i                                   | player_comp/reset                                    |                8 |             32 |
+|  clock_comp/inst/clk_out1 | server_comp/notepos                                         | snd/notepos[0]_i_1_n_0                               |                8 |             32 |
+|  clock_comp/inst/clk_out1 | server_comp/countercycle                                    | snd/countercycle[0]_i_1_n_0                          |                8 |             32 |
+|  clock_comp/inst/clk_out1 | server_comp/counterduty_reg[31]                             | snd/counterduty                                      |                8 |             32 |
+|  clock_comp/inst/clk_out1 | vga/U3/done                                                 | player_comp/counter[0]__1_i_1_n_0                    |                8 |             32 |
+|  clock_comp/inst/clk_out1 | vga/U3/CO[0]                                                | server_comp/clear                                    |                8 |             32 |
+|  clock_comp/inst/clk_out1 |                                                             | player_comp/reset                                    |               37 |             53 |
+|  clock_comp/inst/clk_out1 | server_comp/ai_points_vga[30]_i_1_n_0                       | player_comp/reset                                    |               23 |             62 |
+|  clock_comp/inst/clk_out1 |                                                             |                                                      |              139 |            252 |
++---------------------------+-------------------------------------------------------------+------------------------------------------------------+------------------+----------------+
+
+

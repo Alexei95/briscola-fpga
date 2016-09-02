@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl briscola  "test_everything_func_impl.vhd"
+vhdl2008 briscola  "../../../../briscola.srcs/sim_1/new/test_server.vhd"
+vhdl2008 briscola  "../../../../briscola.srcs/sim_1/new/test_internal_block.vhd"
+vhdl2008 briscola  "../../../../briscola.srcs/sim_1/imports/briscola/test_briscola.vhd"
+vhdl2008 briscola  "../../../../briscola.srcs/sim_1/imports/AI/gen_bench.vhd"
+vhdl2008 briscola  "../../../../briscola.srcs/sim_1/imports/AI/chooser_testbench.vhd"
+vhdl2008 briscola  "../../../../briscola.srcs/sim_1/new/test_prng.vhd"
+vhdl2008 briscola  "../../../../briscola.srcs/sim_1/new/test_everything.vhd"
+
+# Do not sort compile order
+nosort
